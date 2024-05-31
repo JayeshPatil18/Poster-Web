@@ -1,17 +1,20 @@
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDyYgpE8_Da6SxDuLrhX9cy0hiBm0E-k70",
-//     authDomain: "posterapp-14ad7.firebaseapp.com",
-//     databaseURL: "https://posterapp-14ad7-default-rtdb.asia-southeast1.firebasedatabase.app",
-//     projectId: "posterapp-14ad7",
-//     storageBucket: "posterapp-14ad7.appspot.com",
-//     messagingSenderId: "968333834166",
-//     appId: "1:968333834166:web:d60a3c1d10818e98217317",
-//     measurementId: "G-9W62D1T9E0"
-//   };
-  
-//   // Initialize Firebase
-//   const app = initializeApp(firebaseConfig);
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
 
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDyYgpE8_Da6SxDuLrhX9cy0hiBm0E-k70",
+    authDomain: "posterapp-14ad7.firebaseapp.com",
+    databaseURL: "https://posterapp-14ad7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "posterapp-14ad7",
+    storageBucket: "posterapp-14ad7.appspot.com",
+    messagingSenderId: "968333834166",
+    appId: "1:968333834166:web:d60a3c1d10818e98217317",
+    measurementId: "G-9W62D1T9E0"
+};
+
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
+export { firebaseApp };
 
 // ****************
 
@@ -97,5 +100,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function goToHomePage() {
-    window.location.href = "http://127.0.0.1:5500/home/";
+    window.location.href = "/home/";
 }
