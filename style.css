@@ -136,10 +136,11 @@ header {
     background-image: linear-gradient(to right,
     rgb(58, 58, 58),
     rgb(0, 0, 0));
-    font-size: 22px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     color: white;
+    margin-right: 20px; /* Add 20px margin between buttons */
 }
 
 /* For Responsiveness of the page */
@@ -265,3 +266,18 @@ header {
         font-size: 19px;
     }
 }
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Ensures the background is white when fixed */
+    padding: 20px 20px; /* Add padding around the container */
+    border-bottom: 1px solid #ddd; /* Optional: adds a bottom border */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
